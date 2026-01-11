@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    tools:context="com.example.kotlin.Screens.personForm">
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:text="lbTitle"
+            android:id="@+id/lbTitle"
+            android:textSize="25dp" />
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <Button android:id="@+id/btSave"
+                android:text="btSave"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <Button android:id="@+id/btDelete"
+                android:text="btDelete"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+
+            <Button android:id="@+id/btCancel"
+                android:text="btCancel"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0" />
+        </LinearLayout>
+
+        <EditText android:id="@+id/txSsn"
+            android:ems="10"
+            android:hint="txSsn"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"/>
+
+        <EditText android:id="@+id/txName"
+            android:ems="10"
+            android:hint="txName"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"/>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/txType"
+                android:hint="txType"
+                android:enabled="false"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0" />
+
+            <Button android:id="@+id/btTypes"
+                android:text=" "
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"  />
+        </LinearLayout>
+
+        <LinearLayout android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <EditText android:id="@+id/txBorn"
+                android:hint="txBorn"
+                android:enabled="false"
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="3.0" />
+
+            <Button android:id="@+id/btDate"
+                android:text=" "
+                android:layout_width="0.0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="1.0"  />
+        </LinearLayout>
+
+        <CheckBox android:id="@+id/cbState"
+            android:ems="10"
+            android:hint="cbState"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_margin="2dp"/>
+
+        <ImageView android:id="@+id/ivFile"
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center_horizontal" />
+
+        <Button android:id="@+id/btFile"
+            android:text=" "
+            android:layout_width="wrap_content"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</ScrollView>
